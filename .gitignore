@@ -1,0 +1,43 @@
+﻿# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Python virtual environments and cache
+.venv/
+.venv-*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Intermediate training checkpoints
+checkpoints/
+
+# Raw data and large raster downloads
+/data/raw/
+**/*.tif
+**/*.tiff
+**/*.zip
+
+# Frontend dependencies and build output
+node_modules/
+.next/
+out/
+dist/
+build/
+
+# Logs and operating-system files
+*.log
+.DS_Store
+Thumbs.db
+
+# Authentication and private key files
+credentials.json
+token.json
+service-account*.json
+client_secret*.json
+*.pem
+*.key
+*.p12
+*.pfx

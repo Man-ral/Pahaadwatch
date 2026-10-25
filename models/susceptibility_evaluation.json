@@ -1,0 +1,42 @@
+{
+    "model": "Tuned Random Forest",
+    "test_samples": 5934,
+    "spatial_test_metrics": {
+        "accuracy": 0.7755,
+        "roc_auc": 0.8642,
+        "pr_auc": 0.8511,
+        "precision": 0.7187,
+        "recall": 0.9167,
+        "f1_score": 0.8057
+    },
+    "decision_threshold": 0.4,
+    "class_boundaries": {
+        "Low": [
+            null,
+            0.13515920713119017
+        ],
+        "Moderate": [
+            0.13515920713119017,
+            0.6193833378037541
+        ],
+        "High": [
+            0.6193833378037541,
+            0.7780120651327762
+        ],
+        "Very High": [
+            0.7780120651327762,
+            null
+        ]
+    },
+    "limitations": [
+        "Background samples are not confirmed landslide-free.",
+        "Scores are not calibrated real-world probabilities.",
+        "Static features do not predict imminent landslide events."
+    ],
+    "confusion_matrix": {
+        "true_negatives": 1840,
+        "false_positives": 1081,
+        "false_negatives": 251,
+        "true_positives": 2762
+    }
+}
